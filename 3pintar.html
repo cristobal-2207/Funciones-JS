@@ -9,6 +9,20 @@
 <body>
   <!--/Ejercicio 3-->
   <div id="ele1"> hello </div>
+  <!--Modifica la función para que reciba el elemento clickeado de forma de no tener que seleccionarlo nuevamente dentro de la función (1 Punto). Para obtener el puntaje debes entregar el 3 pintar.html válido funcionando en conjunto con el código modificado.
+  function pintar("green"){
+      ele = document.getElementById("ele1")
+      ele.style.backgroundColor = 'yellow'
+  }
+  ele = document.getElementById("ele1")
+  ele.addEventListener("click", pintar);
+  -->
+  <script>
+    const ele1 = document.getElementById("ele1");
+    ele1.addEventListener("click", function(){
+      ele1.style.backgroundColor = "yellow"
+    })
+  </script>
   <script src="/assets/js/script.js"></script>
 </body>
 </html>
